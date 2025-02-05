@@ -10,12 +10,12 @@
         "dynamodb:Scan"
       ],
       "Effect": "Allow",
-      "Resource": "arn:aws:dynamodb:us-east-1:975050001389:table/aws-serverless"
+      "Resource": "arn:aws:dynamodb:us-east-1:count-id:table/aws-serverless"
     },
     {
       "Effect": "Allow",
       "Action": "logs:CreateLogGroup",
-      "Resource": "arn:aws:logs:us-east-1:975050001389:*"
+      "Resource": "arn:aws:logs:us-east-1:count-id:*"
     },
     {
       "Effect": "Allow",
@@ -23,7 +23,7 @@
         "logs:CreateLogStream",
         "logs:PutLogEvents"
       ],
-      "Resource": "arn:aws:logs:us-east-1:975050001389:log-group:/aws/lambda/readLambda:*"
+      "Resource": "arn:aws:logs:us-east-1:count-id:log-group:/aws/lambda/readLambda:*"
     }
   ]
 }
